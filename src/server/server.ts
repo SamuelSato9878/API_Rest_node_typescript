@@ -1,12 +1,11 @@
-import express from 'express';
+import express from "express";
 
 
 const server = express();
 
-server.get("/", function(req, res){
-    return res.send("Ola Programador!");
+
+server.get("/", function (req, res) {
+	return res.send("Ola Programador!");
 });
-
-
 
 export { server };
