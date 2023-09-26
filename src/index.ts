@@ -1,4 +1,5 @@
 import { server } from "./server/server";
 
-
-server.listen(8081, () => console.log("Servidor Rodando"));
+server.listen(process.env.PORT || 8081, () => {
+	console.log(`Servidor Rodando ${process.env.PORT || 8081}`);
+});
